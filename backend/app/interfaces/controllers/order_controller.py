@@ -16,6 +16,6 @@ def order_status():
             "total":  order.subtotal + order.taxes - order.discount,
             "taxes": order.taxes,
             "discounts": order.discount,
-            "items": [item.dict() for item in order.items],
+            "items": [item.model_dump() for item in order.items],
         }
     }

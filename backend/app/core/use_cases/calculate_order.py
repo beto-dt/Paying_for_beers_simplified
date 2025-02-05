@@ -1,6 +1,6 @@
 from backend.app.core.entities.order import Order
 from backend.app.core.entities.stock import Stock
-from backend.app.core.use_cases.apply_promotions import calculate_discount
+from backend.app.core.utils.apply_promotions import calculate_discount
 
 def calculate_order_totals(order: Order, stock: Stock) -> Order:
     subtotal = 0
