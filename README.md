@@ -68,3 +68,25 @@ El sistema sigue una estructura modular para mantener la claridad y facilitar el
  
         uvicorn backend.app.main:app --reload
 
+# Frontend - NextJs
+# Paying_for_beers_simplified
+
+### 🔧 Instalación
+
+1. **Clonar el repositorio:**
+
+       git clone git@github.com:beto-dt/Paying_for_beers_simplified.git
+       cd frontend
+
+2. **Instalar dependencias:** 
+
+       npm install
+
+4.  **Levantar proyecto:** :  
+ 
+        npm run dev
+
+### 🔧 Observaciones
+   
+      Para poder levantar completamente el proyecto es necesario levantar el backend  y el frontend
+
