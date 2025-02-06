@@ -3,24 +3,20 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import OrderCard from "@/app/components/OrderCard";
+import {fetchOrderStatus} from "@/lib/api";
 
 const OrderPage: React.FC = () => {
-  const [order, setOrder] = useState<any | null>(null);
+  const [order, setOrder] = useState(null);
 
-  useEffect(() => {
-    const fetchOrder = async () => {
-      try {
-        const response = await axios.get('http://localhost:8000/order/status');
-        setOrder(response.data.order);
-      } catch (error) {
-        console.error('Error fetching order:', error);
-      }
+ useEffect(() => {
+    const getOrder = async () => {
+      const orderData = await fetchOrderStatus();
+      setOrder(orderData);
     };
 
-    fetchOrder();
+    getOrder();
   }, []);
 
-  // Mensaje de carga mientras no haya datos disponibles
   if (!order) {
     return (
       <div className="flex items-center justify-center h-screen text-xl font-medium text-gray-600">
