@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, {useEffect, useState} from 'react';
 import OrderCard from "@/app/components/OrderCard";
 import {fetchOrderStatus} from "@/lib/api";
 

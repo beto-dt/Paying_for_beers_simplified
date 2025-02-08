@@ -1,6 +1,7 @@
 from datetime import datetime
-from backend.app.core.entities.stock import Stock
+
 from backend.app.core.entities.order import Order, OrderItem, OrderRound
+from backend.app.core.entities.stock import Stock
 
 BASE_DATE = datetime(2024, 9, 10, 12, 0, 0)
 

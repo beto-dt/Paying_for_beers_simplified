@@ -22,7 +22,7 @@ def calculate_order_totals(order: Order, stock: Stock) -> Order:
         "discount_percentage": 10,
     }
 
-    discount = calculate_discount(subtotal, promotion_rules)  # Uso de la función
+    discount = calculate_discount(subtotal, promotion_rules)
 
     order.subtotal = subtotal
     order.taxes = taxes

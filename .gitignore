@@ -1,2 +1,9 @@
-.idea/
+.idea
 .DS_Store
+backend/__pycache__
+backend/app/__pycache__
+backend/app/core/__pycache__
+backend/app/core/use_cases/__pycache__
+backend/app/interfaces/__pycache__
+backend/app/utils/__pycache__
+backend/app/interfaces/controllers/__pycache__

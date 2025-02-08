@@ -1,4 +1,3 @@
-import pytest
 from backend.app.core.utils.apply_promotions import calculate_discount
 
 def test_calculate_discount_no_promotion_rules():

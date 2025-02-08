@@ -1,12 +1,15 @@
-from pydantic import BaseModel
 from datetime import datetime
 from typing import List
+
+from pydantic import BaseModel
+
 
 class OrderItem(BaseModel):
     name: str
     quantity: int
     price_per_unit: int = 0
     total: int = 0
+
 
 class OrderRound(BaseModel):
     created: datetime
